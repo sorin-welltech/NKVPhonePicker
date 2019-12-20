@@ -215,7 +215,7 @@ open class NKVPhonePickerTextField: TextFieldPatternFormat {
             let countriesVC = CountriesViewController.standardController()
             countriesVC.delegate = self as CountriesViewControllerDelegate
             let navC = UINavigationController.init(rootViewController: countriesVC)
-            
+            navC.modalPresentationStyle = .fullScreen
             customizeCountryPicker(countriesVC)
             delegate.present(navC, animated: true, completion: nil)
         }
