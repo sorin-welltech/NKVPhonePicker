@@ -107,10 +107,10 @@ open class NKVPhonePickerTextField: TextFieldPatternFormat {
     ///   - number: number (only digits)
     public func preFillText(source: NKVSource,
                             number: Int) {
-        guard let c = Country.country(for: source) else {
+        /*guard let c = Country.country(for: source) else {
             print("⚠️ NKVPhonePickerTextField -> Can't prefill text with selected source.")
             return
-        }
+        }*/
         presenter.setFlag(source: source)
         //presenter.enablePhoneFormat(for: c)
         text = "\(number)"
