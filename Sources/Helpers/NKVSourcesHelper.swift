@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct NKVSourcesHelper {
+public struct NKVSourcesHelper {
     
     /// Gives the flag image, if it exists in bundle.
     ///

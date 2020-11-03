@@ -112,7 +112,7 @@ open class NKVPhonePickerTextField: TextFieldPatternFormat {
             return
         }
         presenter.setFlag(source: source)
-        presenter.enablePhoneFormat(for: c)
+        //presenter.enablePhoneFormat(for: c)
         text = "\(number)"
     }
     

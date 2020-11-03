@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct NKVLocalizationHelper {
+public struct NKVLocalizationHelper {
     /// Returns the code of the country (region) of the current localization.
     ///
     /// Ex: For Russian phone language it would be "RU".

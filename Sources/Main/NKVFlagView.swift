@@ -18,11 +18,11 @@ open class NKVFlagView: UIView {
 
     /// A designated method for setting a flag image
     public func setFlag(with source: NKVSource) {
-        if let flagImage = NKVSourcesHelper.flag(for: source),
-            let newSettedCountry = Country.country(for: source) {
+        if let flagImage = NKVSourcesHelper.flag(for: source) {
+            //if let newSettedCountry = Country.country(for: source) {
             self.flagButton.setImage(flagImage, for: .normal)
-            currentPresentingCountry = newSettedCountry
-            textField.presenter.enablePhoneFormat(for: newSettedCountry)
+            //currentPresentingCountry = newSettedCountry
+            //textField.presenter.enablePhoneFormat(for: newSettedCountry)
         }
     }
     

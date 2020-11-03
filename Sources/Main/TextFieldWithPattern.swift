@@ -119,7 +119,7 @@ open class TextFieldPatternFormat: UITextField {
     override open var text: String! {
         set {
             super.text = newValue
-            textDidChange() // format string properly even when it's set programatically
+            //textDidChange() // format string properly even when it's set programatically
         }
         
         get {
@@ -128,7 +128,7 @@ open class TextFieldPatternFormat: UITextField {
             } else {
                 // Because the UIControl target action is called before NSNotificaion (from which we fire our custom formatting), we need to
                 // force update finalStringWithoutFormatting to get the latest text. Otherwise, the last character would be missing.
-                textDidChange()
+                //textDidChange()
                 return finalStringWithoutFormatting
             }
         }
@@ -170,7 +170,9 @@ open class TextFieldPatternFormat: UITextField {
     }
     
     @objc public func textDidChange() {
-        var superText: String { return super.text ?? "" }
+        // just return and screw the formatting
+        return
+        /*var superText: String { return super.text ?? "" }
         
         let currentTextForFormatting: String
         
@@ -241,7 +243,7 @@ open class TextFieldPatternFormat: UITextField {
                 let index = _textWithoutSecureBullets.index(_textWithoutSecureBullets.startIndex, offsetBy: maxLength)
                 _textWithoutSecureBullets = String(_textWithoutSecureBullets[..<index])
             }
-        }
+        }*/
     }
 }
 
