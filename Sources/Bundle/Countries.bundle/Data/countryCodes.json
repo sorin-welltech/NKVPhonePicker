@@ -528,12 +528,6 @@
         "format": "### #############"
     },
     {
-        "name": "Guernsey",
-        "dial_code": "44",
-        "code": "GG",
-        "format": "## ##############"
-    },
-    {
         "name": "Guinea",
         "dial_code": "224",
         "code": "GN",
