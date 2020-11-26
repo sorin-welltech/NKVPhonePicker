@@ -612,12 +612,6 @@
         "format": "### #############"
     },
     {
-        "name": "Isle of Man",
-        "dial_code": "44",
-        "code": "IM",
-        "format": "## ##############"
-    },
-    {
         "name": "Israel",
         "dial_code": "972",
         "code": "IL",
@@ -639,12 +633,6 @@
         "name": "Japan",
         "dial_code": "81",
         "code": "JP",
-        "format": "## ##############"
-    },
-    {
-        "name": "Jersey",
-        "dial_code": "44",
-        "code": "JE",
         "format": "## ##############"
     },
     {
